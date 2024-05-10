@@ -54,7 +54,6 @@ body {
 }
 .today-area {
     display: none;
-    /* padding-bottom: 20px; */
 }
 .icon-area img {
     width: 150px;
@@ -65,8 +64,6 @@ body {
 
 .today-area .today-weather {float: left;}
 
-/* 
-.weather-img img {width:150px ;} */
 
 
 
@@ -250,59 +247,6 @@ body {
     background-color: #2e9cdf;
     cursor: pointer;
 }
-/* .weather .top {
-    display: flex;
-    justify-content: center;
-}
-
-.weather-icon {
-    width: 170px;
-    margin-top: 10px;
-}
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-    margin-top: 10px;
-}
-.weather h2{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -20px;
-}
-.details {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 20px;   
-    margin-top: 20px;     
-}
-.col{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-.col img {
-    width: 40px;
-    margin-right: 10px;
-}
-
-.humidity, .wind {
-    font-size: 28px;
-    margin-top: -6px;
-} */
-
-/* .weather {
-    display: none;
-}
-
-.error {   
-    text-align: left;
-    margin-left: 10px;
-    font-style: 14px;
-    margin-top: 10px;
-    display: none;
-
-} */
 
 
 
@@ -312,54 +256,7 @@ body {
     .search input {
         width: calc(100% - 80px);
     } 
-
-    /*  */
-/* .weather-icon {
-    width: 22.1354vw;
-    margin-top: 1.3021vw;
-}
-.weather h1{
-    font-size: 10.4167vw;
-    font-weight: 500;
-    margin-top: 1.3021vw;
-}
-.weather h2{
-    font-size: 5.8594vw;
-    font-weight: 400;
-    margin-top: -2.6042vw;
-}
-.details {
-   
-    padding: 0 2.6042vw;   
-    margin-top: 2.6042vw;
-}
-.col{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-.col img {
-    width: 5.2083vw;
-    margin-right: 1.3021vw;
-}
-
-.humidity, .wind {
-    font-size: 3.6458vw;
-    margin-top: -0.7813vw;
-} */
-
-/* .weather {
-    display: none;
-}
-
-.error {   
-    text-align: left;
-    margin-left: 1.3021vw;
-    font-style: 1.8229vw;
-    margin-top: 1.3021vw;
-    display: none;
-
-} */
+    
 
     
     
@@ -404,7 +301,7 @@ body {
             display: block;
         }
     .weather h3{
-        /* display: inline-block; */
+
         padding: 2.5000vw 1.2500vw 0.0000vw 1.2500vw;
         border-bottom: 0.2500vw solid rgba(255, 255, 255, .7);
     }
@@ -419,8 +316,6 @@ body {
       }
     
       .condition-area {
-          /* height: 7.5000vw;
-           */
            padding-left:1.2500vw ;
            border-bottom: 0.2500vw solid rgba(255, 255, 255, .3);
         
