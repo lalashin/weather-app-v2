@@ -8,11 +8,9 @@ const place = document.querySelector(".my-local");
 const description = document.querySelector(".today-description");
 const weatherImg = document.querySelector(".today-weather-icon");
 const todayError = document.querySelector(".today-error");
-//console.log(cardBbColor)
 const cityInput =document.querySelector(".city-input");
 const searchBtn =document.querySelector(".search-btn");
 let forecastDiv = document.querySelector('.forecast-result');
-//const weatherIcon = document.querySelector(".weather-icon");
 let pagiNation = document.querySelector(".page");
 let totalResults = 0;
 let page = 1;
@@ -55,14 +53,13 @@ async function getWeather(lat,lon) {
          temperature.innerHTML = Math.round(data.main.temp) + "°C";
          place.innerHTML= data.name;
          description.innerHTML = data.weather[0].description;
-         //openweathermap API에서 지원하는 아이콘 사용
+         //openweathermap API에서 지원하는 아이콘 사용 시
          //data.weather[0].icon = "09d"
         //  const icon = data.weather[0].icon;
-        //  const iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
- 
+        //  const iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`; 
         // weatherImg.setAttribute('src', iconURL);
 
-         //data.weather[0].main ="Snow"
+         //data.weather[0].main ="Clear"
          if(data.weather[0].main == "Clouds"){
             cardBbColor.classList.add("bgClouds");
             weatherImg.src = "images/clouds.png";  
@@ -207,8 +204,8 @@ function displayForecast(data,city) {
     let paginationHTML = ` 
     <ul class="pagination modal">`;
     if(page >= 6) {
-        paginationHTML += `<li><a href="#" class="first">&lt;&lt;</a></li>
-        <li><a href="#" class="arrow left">&lt;</a></li>`;
+        paginationHTML += `<li><a href="#" class="first" onclick="moveToPage(1)">&lt;&lt;</a></li>
+        <li><a href="#" class="arrow left" onclick="moveToPage(${page-1})">&lt;</a></li>`;
     }
 
     for(let i=firstPage; i<=lastPage;i++){
@@ -216,8 +213,8 @@ function displayForecast(data,city) {
     }
 
     if (lastPage < totalPages) {
-        paginationHTML += `<li><a href="#" class="arrow right">&gt;</a></li>
-        <li><a href="#" class="last">&gt;&gt;</a></li>`;
+        paginationHTML += `<li><a href="#" class="arrow right" onclick="moveToPage(${page+1})">&gt;</a></li>
+        <li><a href="#" class="last" onclick="moveToPage(${totalPages})">&gt;&gt;</a></li>`;
     }
 
     paginationHTML += ` </ul>

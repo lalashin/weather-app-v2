@@ -6,7 +6,7 @@
 }
 body {
     background: linear-gradient(135deg,#76d2f7,#a2ddf5);
-    /* height: 100vh; */
+    height: 100vh;
     padding: 40px 0;
 }
 
@@ -26,19 +26,19 @@ body {
     background: linear-gradient(135deg,#4e93f2, #0068d2) ;
 }
 .bgClear {
-    background: linear-gradient(135deg,#47caff, #61d1fe) ;
+    background: linear-gradient(135deg,#58ccfa, #2f93f7) ;
 }
 .bgRain{
     background: linear-gradient(135deg,#596cca, #334dba) ;
 }
 .bgSnow{
-    background: linear-gradient(135deg,#80d1fc, #2db3fc) ;
+    background: linear-gradient(135deg,#80d1fc, #0068d2) ;
 }
 .bgDrizzle{
     background: linear-gradient(135deg,#6ba6f6, #3486f5) ;
 }
 .bgMist{
-    background: linear-gradient(135deg,#9fdafa, #7dd0fc) ;
+    background: linear-gradient(135deg,#9fdafa, #0068d2) ;
 }
 
 .today-area {
@@ -54,7 +54,7 @@ body {
 }
 .today-area {
     display: none;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .icon-area img {
     width: 150px;
@@ -136,6 +136,10 @@ body {
     border-radius: 15px;
     text-align: left;
     
+}
+.weather p {
+    font-size: 14px;
+    font-weight: bold;
 }
 .weather h3{
     /* display: inline-block; */
@@ -448,7 +452,11 @@ body {
 }
 
 @media (max-width:360px) {
-
+    .weather-title {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
     .today-description {margin-top: -15px;}
     .icon-area {float: right;}
     .icon-area img {width: 90px;}
